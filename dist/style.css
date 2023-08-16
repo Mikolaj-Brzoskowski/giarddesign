@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap');
+
 /* import Inter font */
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
@@ -536,11 +538,518 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-green-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+.fixed{
+  position: fixed;
 }
 
-.font-display{
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.right-0{
+  right: 0px;
+}
+
+.right-5{
+  right: 1.25rem;
+}
+
+.bottom-5{
+  bottom: 1.25rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.ml-1{
+  margin-left: 0.25rem;
+}
+
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.ml-3{
+  margin-left: 0.75rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.ml-5{
+  margin-left: 1.25rem;
+}
+
+.mr-5{
+  margin-right: 1.25rem;
+}
+
+.mr-3{
+  margin-right: 0.75rem;
+}
+
+.mr-1{
+  margin-right: 0.25rem;
+}
+
+.mr-10{
+  margin-right: 2.5rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-screen{
+  height: 100vh;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
+.h-auto{
+  height: auto;
+}
+
+.h-fit{
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-48{
+  height: 12rem;
+}
+
+.h-max{
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.h-1\/2{
+  height: 50%;
+}
+
+.h-1\/3{
+  height: 33.333333%;
+}
+
+.h-2\/3{
+  height: 66.666667%;
+}
+
+.max-h-full{
+  max-height: 100%;
+}
+
+.max-h-screen{
+  max-height: 100vh;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-screen{
+  width: 100vw;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
+.w-96{
+  width: 24rem;
+}
+
+.w-auto{
+  width: auto;
+}
+
+.flex-auto{
+  flex: 1 1 auto;
+}
+
+.flex-1{
+  flex: 1 1 0%;
+}
+
+.flex-grow{
+  flex-grow: 1;
+}
+
+.grow{
+  flex-grow: 1;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.flex-nowrap{
+  flex-wrap: nowrap;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-evenly{
+  justify-content: space-evenly;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.border-2{
+  border-width: 2px;
+}
+
+.border-4{
+  border-width: 4px;
+}
+
+.border-solid{
+  border-style: solid;
+}
+
+.border-green{
+  --tw-border-opacity: 1;
+  border-color: rgb(27 91 49 / var(--tw-border-opacity));
+}
+
+.bg-beige{
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 193 171 / var(--tw-bg-opacity));
+}
+
+.bg-inherit{
+  background-color: inherit;
+}
+
+.bg-green{
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 91 49 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.fill-green{
+  fill: #1B5B31;
+}
+
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-fill{
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.object-none{
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+.object-scale-down{
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.p-10{
+  padding: 2.5rem;
+}
+
+.p-2{
+  padding: 0.5rem;
+}
+
+.p-3{
+  padding: 0.75rem;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
+.p-5{
+  padding: 1.25rem;
+}
+
+.p-14{
+  padding: 3.5rem;
+}
+
+.p-20{
+  padding: 5rem;
+}
+
+.p-28{
+  padding: 7rem;
+}
+
+.font-inter{
   font-family: Inter, serif;
+}
+
+.font-montserrat{
+  font-family: Montserrat, serif;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.font-normal{
+  font-weight: 400;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
+.text-green{
+  --tw-text-opacity: 1;
+  color: rgb(27 91 49 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.antialiased{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 640px){
+  .sm\:ml-20{
+    margin-left: 5rem;
+  }
+
+  .sm\:ml-3{
+    margin-left: 0.75rem;
+  }
+
+  .sm\:mr-7{
+    margin-right: 1.75rem;
+  }
+
+  .sm\:mt-6{
+    margin-top: 1.5rem;
+  }
+
+  .sm\:mt-7{
+    margin-top: 1.75rem;
+  }
+
+  .sm\:mt-0{
+    margin-top: 0px;
+  }
+
+  .sm\:flex{
+    display: flex;
+  }
+
+  .sm\:h-14{
+    height: 3.5rem;
+  }
+
+  .sm\:h-auto{
+    height: auto;
+  }
+
+  .sm\:h-80{
+    height: 20rem;
+  }
+
+  .sm\:h-64{
+    height: 16rem;
+  }
+
+  .sm\:w-1\/2{
+    width: 50%;
+  }
+
+  .sm\:w-16{
+    width: 4rem;
+  }
+
+  .sm\:flex-auto{
+    flex: 1 1 auto;
+  }
+
+  .sm\:flex-row{
+    flex-direction: row;
+  }
+
+  .sm\:items-start{
+    align-items: flex-start;
+  }
+
+  .sm\:p-0{
+    padding: 0px;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:ml-20{
+    margin-left: 5rem;
+  }
+
+  .lg\:mt-40{
+    margin-top: 10rem;
+  }
+
+  .lg\:mt-32{
+    margin-top: 8rem;
+  }
+
+  .lg\:mt-28{
+    margin-top: 7rem;
+  }
+
+  .lg\:mt-24{
+    margin-top: 6rem;
+  }
+
+  .lg\:ml-16{
+    margin-left: 4rem;
+  }
+
+  .lg\:ml-32{
+    margin-left: 8rem;
+  }
+
+  .lg\:mr-16{
+    margin-right: 4rem;
+  }
+
+  .lg\:mr-32{
+    margin-right: 8rem;
+  }
+
+  .lg\:h-full{
+    height: 100%;
+  }
+
+  .lg\:w-1\/2{
+    width: 50%;
+  }
+
+  .lg\:flex-grow{
+    flex-grow: 1;
+  }
+
+  .lg\:flex-row{
+    flex-direction: row;
+  }
+
+  .lg\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:ml-16{
+    margin-left: 4rem;
+  }
+
+  .xl\:mr-32{
+    margin-right: 8rem;
+  }
+
+  .xl\:mt-24{
+    margin-top: 6rem;
+  }
+
+  .xl\:h-full{
+    height: 100%;
+  }
+
+  .xl\:w-1\/2{
+    width: 50%;
+  }
+
+  .xl\:flex-row{
+    flex-direction: row;
+  }
+
+  .xl\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .xl\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }

@@ -2,9 +2,15 @@
 module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'beige': '#DCC1AB',
+        'green': '#1B5B31',
+      },
+    },
     fontFamily: {
-      'display': ['Inter', 'serif'], 
+      'inter': ['Inter', 'serif'], 
+      'montserrat': ['Montserrat', 'serif'],
     }
   },
   plugins: [],
