@@ -6,42 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/563efd8ee7.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
-    <body class="font-inter font-normal">
-        <nav class="sm:flex sm:flex-auto sm:h-14 mb-6">
-            <div class="sm:w-1/2 sm:mt-6 sm:ml-20">
-                <p class="antialiased text-xl"><span class="font-bold">giard</span>design</p>
-            </div>
-            <ul class="flex flex-col flex-nowrap sm:flex-row flex-auto items-center sm:items-start justify-evenly sm:mt-7 sm:mr-7">
-                <li class="p-2 sm:p-0">
-                    <a href="#" class="flex">
-                        <span>Oferta</span>
-                        <i class="fas fa-chevron-down ml-1 mt-1"></i>
-                    </a>
-                </li>
-                <li class="p-2 sm:p-0 sm:ml-3 sm:w-16">
-                    <a href="#">
-                        <span>O firmie</span>
-                    </a>
-                </li>
-                <li class="p-2 sm:p-0 sm:ml-3">
-                    <a href="#">
-                        <span>Realizacje</span>
-                    </a>
-                </li>
-                <li class="p-2 sm:p-0 sm:ml-3">
-                    <a href="#">
-                        <span>Kontakt</span>
-                    </a>
-                </li>
-                <li class="p-2 sm:p-0 sm:ml-3">
-                    <i class="fas fa-magnifying-glass"></i>
-                </li>
-            </ul>
-        </nav>
-        <main>
-            <div class="flex w-screen h-screen flex-col xl:flex-row flex-auto">
-                <div class="w-full xl:w-1/2 h-full bg-beige p-28 flex-1">
+    <body class="font-inter font-normal flex-col h-screen">
+        <div id="nav-placeholder" class="flex"></div>
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("nav.html");
+        });
+        </script>
+        <main class="flex grow flex-auto w-full h-full">
+            <div class="flex flex-col xl:flex-row">
+                <div class="w-full xl:w-1/2 bg-beige p-28 flex-1">
                     <div class="xl:mt-24 text-4xl xl:text-6xl mb-12 xl:ml-16 xl:mr-32 font-montserrat font-semibold">Nowoczesna aranżacja Twojego ogrodu</div>
                     <div class="mlr-5 xl:ml-16 xl:mr-32">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</div>
                     <div class="mt-10 xl:ml-16 xl:mr-32">
@@ -49,8 +25,8 @@
                         <button class="mt-5 border-solid border-2 border-green rounded-full p-3 text-green">Zobacz nasze realizacje<i class="fas fa-arrow-down ml-3"></i></button>
                     </div>
                 </div>
-                <div class="w-full xl:w-1/2 h-2/3 xl:h-full relative">
-                    <img class="object-cover h-full w-full" src="img/trawa.jpg"></img>
+                <div class="w-full xl:w-1/2 relative h-full">
+                    <img class="object-cover w-full h-full" src="img/trawa.jpg"></img>
                     <div class="absolute bottom-0 right-0 bg-white text-3xl xl:text-5xl p-10">
                         <i class="fas fa-arrow-left mr-5"></i>
                         <i class="fas fa-arrow-right ml-5"></i>
