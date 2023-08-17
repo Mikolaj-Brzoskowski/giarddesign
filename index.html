@@ -8,19 +8,19 @@
         <script src="https://kit.fontawesome.com/563efd8ee7.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
-    <body class="font-inter font-normal flex-col h-screen">
+    <body class="font-inter font-normal flex flex-col h-screen">
         <div id="nav-placeholder" class="flex"></div>
         <script>
         $(function(){
-          $("#nav-placeholder").load("nav.html");
+          $("#nav-placeholder").load("./components/nav.html");
         });
         </script>
-        <main class="flex grow flex-auto w-full h-full">
-            <div class="flex flex-col xl:flex-row">
-                <div class="w-full xl:w-1/2 bg-beige p-28 flex-1">
-                    <div class="xl:mt-24 text-4xl xl:text-6xl mb-12 xl:ml-16 xl:mr-32 font-montserrat font-semibold">Nowoczesna aranżacja Twojego ogrodu</div>
-                    <div class="mlr-5 xl:ml-16 xl:mr-32">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</div>
-                    <div class="mt-10 xl:ml-16 xl:mr-32">
+        <main class="flex grow w-full h-full xl:h-[calc(100%-80px)]">
+            <div class="flex flex-col xl:flex-row bg-beige h-full">
+                <div class="w-full xl:w-1/2  p-28 flex-1">
+                    <div class="text-4xl xl:text-6xl mb-12 xl:ml-8 xl:mr-12 xl:mt-12 font-montserrat font-semibold">Nowoczesna aranżacja Twojego ogrodu</div>
+                    <div class="mlr-5 xl:ml-8 xl:mr-12">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</div>
+                    <div class="mt-10 xl:ml-8 xl:mr-12">
                         <button class="border-solid border-2 border-green rounded-full bg-green p-3 text-white mr-5">Skontaktuj się z nami</button>
                         <button class="mt-5 border-solid border-2 border-green rounded-full p-3 text-green">Zobacz nasze realizacje<i class="fas fa-arrow-down ml-3"></i></button>
                     </div>
