@@ -15,8 +15,53 @@
           $("#nav-placeholder").load("./components/nav.html");
         });
         </script>
-        <main class="bg-grey flex grow h-full">
-asd
+        <main class="flex grow h-full flex-col bg-grey ">
+            <div class="flex flex-col justify-evenly items-start p-8 sm:px-20 md:px-40 md:py-20 lg:w-2/3 bg-grey ">
+                <p class="text-xs mb-4">Oferta</p>
+                <h1 class="text-5xl font-medium mb-8">Działamy <span class="italic">kompleksowo</span></h1>
+                <p>Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
+            </div>
+            <div class="flex flex-col w-full items-center lg:flex-row justify-evenly px-12 bg-grey">
+                <div class="bg-white p-10 rounded-3xl flex flex-col w-96 lg:w-72 xl:w-96 h-96 mb-8 hover:scale-125 hover:cursor-grab" id="open-btn1">
+                    <i class="fa-solid fa-pen fa-flip-horizontal fa-2xl self-start my-8"></i>
+                    <p class="font-semibold text-3xl font-montserrat mb-4">Projekty</p>
+                    <p class="text-sm mb-auto">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+                    <div class="text-green underline underline-offset-8">Dowiedz się więcej<i class="fas fa-arrow-right ml-3"></i></div>
+                </div>
+                <div class="bg-white p-10 rounded-3xl flex flex-col w-96 lg:w-72 xl:w-96 h-96 mb-8 hover:scale-125 hover:cursor-grab" id="open-btn2">
+                    <i class="fa-solid fa-eye self-start fa-2xl my-8"></i>
+                    <p class="font-semibold text-3xl font-montserrat mb-4">Wizualizacje</p>
+                    <p class="text-sm mb-auto">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+                    <div class="text-green underline underline-offset-8">Dowiedz się więcej<i class="fas fa-arrow-right ml-3"></i></div>
+                </div>
+                <div class="bg-white p-10 rounded-3xl flex flex-col w-96 lg:w-72 xl:w-96 h-96 mb-8 hover:scale-125 hover:cursor-grab" id="open-btn3">
+                    <i class="fa-solid fa-star self-start fa-2xl my-8"></i>
+                    <p class="font-semibold text-3xl font-montserrat mb-4">Realizacje</p>
+                    <p class="text-sm mb-auto">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+                    <div class="text-green underline underline-offset-8">Zobacz nasze realizacje<i class="fas fa-arrow-right ml-3"></i></div>
+                </div>
+                <div class="fixed hidden inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" id="my-modal">
+                    <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+                        <div class="mt-3 text-center">
+                            <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100">
+                            </div>
+                            <h3 class="text-lg leading-6 font-medium text-gray-900" id="modalHeader"></h3>
+                            <div class="mt-2 px-7 py-3">
+                                <p class="text-sm text-gray-500" id="modalText"></p>
+                            </div>
+                            <div class="items-center px-4 py-3">
+                                <button
+                                    id="ok-btn"
+                                    class="px-4 py-2 bg-green-50 text-base font-medium rounded-md w-full shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300 border-2"
+                                >
+                                    Zamknij
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script src="js/modal.js"></script>
+            </div>
         </main>
     </body>
 </html>
