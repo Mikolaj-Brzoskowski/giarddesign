@@ -8,33 +8,33 @@
         <script src="https://kit.fontawesome.com/563efd8ee7.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
-    <body class="font-inter font-normal flex flex-col h-screen">
+    <body class="font-inter font-normal flex flex-col ">
         <div id="nav-placeholder" class="flex"></div>
         <script>
         $(function(){
           $("#nav-placeholder").load("./components/nav.html");
         });
         </script>
-        <main class="flex grow h-full flex-col bg-grey ">
+        <main class="flex grow h-full flex-col bg-grey">
             <div class="flex flex-col justify-evenly items-start p-8 sm:px-20 md:px-40 md:py-20 lg:w-2/3 bg-grey ">
                 <p class="text-xs mb-4">Oferta</p>
-                <h1 class="text-5xl font-medium mb-8">Działamy <span class="italic">kompleksowo</span></h1>
+                <p class="text-5xl font-medium mb-8">Działamy <span class="italic">kompleksowo</span></p>
                 <p>Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
             </div>
             <div class="flex flex-col w-full items-center lg:flex-row justify-evenly px-12 bg-grey">
-                <div class="bg-white p-10 rounded-3xl flex flex-col w-96 lg:w-72 xl:w-96 h-96 mb-8 hover:scale-125 hover:cursor-grab" id="open-btn1">
+                <div class="bg-white p-10 rounded-3xl flex flex-col w-80 sm:w-96 lg:w-72 xl:w-96 h-96 mb-8 hover:scale-125 hover:cursor-grab" id="open-btn1">
                     <i class="fa-solid fa-pen fa-flip-horizontal fa-2xl self-start my-8"></i>
                     <p class="font-semibold text-3xl font-montserrat mb-4">Projekty</p>
                     <p class="text-sm mb-auto">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
                     <div class="text-green underline underline-offset-8">Dowiedz się więcej<i class="fas fa-arrow-right ml-3"></i></div>
                 </div>
-                <div class="bg-white p-10 rounded-3xl flex flex-col w-96 lg:w-72 xl:w-96 h-96 mb-8 hover:scale-125 hover:cursor-grab" id="open-btn2">
+                <div class="bg-white p-10 rounded-3xl flex flex-col w-80 sm:w-96 lg:w-72 xl:w-96 h-96 mb-8 hover:scale-125 hover:cursor-grab" id="open-btn2">
                     <i class="fa-solid fa-eye self-start fa-2xl my-8"></i>
                     <p class="font-semibold text-3xl font-montserrat mb-4">Wizualizacje</p>
                     <p class="text-sm mb-auto">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
                     <div class="text-green underline underline-offset-8">Dowiedz się więcej<i class="fas fa-arrow-right ml-3"></i></div>
                 </div>
-                <div class="bg-white p-10 rounded-3xl flex flex-col w-96 lg:w-72 xl:w-96 h-96 mb-8 hover:scale-125 hover:cursor-grab" id="open-btn3">
+                <div class="bg-white p-10 rounded-3xl flex flex-col w-80 sm:w-96 lg:w-72 xl:w-96 h-96 mb-8 hover:scale-125 hover:cursor-grab" id="open-btn3">
                     <i class="fa-solid fa-star self-start fa-2xl my-8"></i>
                     <p class="font-semibold text-3xl font-montserrat mb-4">Realizacje</p>
                     <p class="text-sm mb-auto">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
@@ -63,5 +63,12 @@
                 <script src="js/modal.js"></script>
             </div>
         </main>
+        <div id="footer-placeholder" class="flex"></div>
+        <script>
+            $(function(){
+            $("#footer-placeholder").load("./components/footer.html");
+            });
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     </body>
 </html>

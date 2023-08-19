@@ -8,19 +8,19 @@
         <script src="https://kit.fontawesome.com/563efd8ee7.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
-    <body class="font-inter font-normal flex flex-col h-screen">
+    <body class="font-inter font-normal flex flex-col">
         <div id="nav-placeholder" class="flex"></div>
         <script>
         $(function(){
           $("#nav-placeholder").load("./components/nav.html");
         });
         </script>
-        <main class="flex w-full h-full xl:h-[calc(100%-80px)]">
+        <main class="flex grow w-full h-full xl:h-[calc(100vh-80px)]">
             <div class="flex flex-col xl:flex-row bg-beige w-full h-full">
-                <div class="w-full xl:w-1/2 h-full p-28 flex-1">
-                    <p class="text-4xl xl:text-6xl mb-12 xl:ml-8 xl:mr-12 xl:mt-12 font-montserrat font-semibold">Nowoczesna aranżacja Twojego ogrodu</p>
-                    <p class="mx-5 xl:ml-8 xl:mr-12">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
-                    <div class="mt-10 xl:ml-8 xl:mr-12">
+                <div class="w-full xl:w-1/2 h-full p-8 sm:p-28">
+                    <p class="text-4xl xl:text-6xl mb-12 xl:ml-8 xl:mr-12 xl:mt-12 font-montserrat font-semibold mx-5">Nowoczesna aranżacja Twojego ogrodu</p>
+                    <p class="sm:mx-5 xl:ml-8 xl:mr-12 mx-5">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+                    <div class="mt-10 xl:ml-8 xl:mr-12 mx-5">
                         <button onclick="location.href='kontakt.html'" type="button" class="border-solid border-2 border-green rounded-full bg-green p-3 text-white mr-5">Skontaktuj się z nami</button>
                         <button onclick="location.href='realizacje.html'" type="button" class="mt-5 border-solid border-2 border-green rounded-full p-3 text-green">Zobacz nasze realizacje<i class="fas fa-arrow-down ml-3"></i></button>
                     </div>
@@ -39,15 +39,20 @@
                         <div class="hidden duration-700 ease-in" data-carousel-item>
                             <img class="object-cover w-full h-full absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="img/schody.jpg"></img>
                         </div>
-                        <div class="absolute bottom-0 right-0 bg-white text-3xl xl:text-5xl p-10 z-20">
+                        <div class="absolute bottom-0 right-0 bg-white text-3xl xl:text-5xl p-5 sm:p-10 z-20">
                             <button type="button" data-carousel-prev><i class="fas fa-arrow-left mr-5"></i></button>
                             <button type="button" data-carousel-next><i class="fas fa-arrow-right ml-5"></i></button>
                         </div>
                     </div>
                 </div>
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
-                </div>
             </div>
         </main>
+        <div id="footer-placeholder" class="flex"></div>
+        <script>
+            $(function(){
+            $("#footer-placeholder").load("./components/footer.html");
+            });
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     </body>
 </html>
