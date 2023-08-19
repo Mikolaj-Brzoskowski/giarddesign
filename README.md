@@ -1,5 +1,5 @@
-TODO
-light/dark mode
-animations
-realizacje.html
-short project description
+## TODO
+- light/dark mode
+- animations
+- realizacje.html
+- short project description
