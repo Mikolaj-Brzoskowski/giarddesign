@@ -15,22 +15,37 @@
           $("#nav-placeholder").load("./components/nav.html");
         });
         </script>
-        <main class="flex grow w-full h-full xl:h-[calc(100%-80px)]">
-            <div class="flex flex-col xl:flex-row bg-beige h-full">
-                <div class="w-full xl:w-1/2  p-28 flex-1">
-                    <div class="text-4xl xl:text-6xl mb-12 xl:ml-8 xl:mr-12 xl:mt-12 font-montserrat font-semibold">Nowoczesna aranżacja Twojego ogrodu</div>
-                    <div class="mlr-5 xl:ml-8 xl:mr-12">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</div>
+        <main class="flex w-full h-full xl:h-[calc(100%-80px)]">
+            <div class="flex flex-col xl:flex-row bg-beige w-full h-full">
+                <div class="w-full xl:w-1/2 h-full p-28 flex-1">
+                    <p class="text-4xl xl:text-6xl mb-12 xl:ml-8 xl:mr-12 xl:mt-12 font-montserrat font-semibold">Nowoczesna aranżacja Twojego ogrodu</p>
+                    <p class="mx-5 xl:ml-8 xl:mr-12">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
                     <div class="mt-10 xl:ml-8 xl:mr-12">
-                        <button class="border-solid border-2 border-green rounded-full bg-green p-3 text-white mr-5">Skontaktuj się z nami</button>
-                        <button class="mt-5 border-solid border-2 border-green rounded-full p-3 text-green">Zobacz nasze realizacje<i class="fas fa-arrow-down ml-3"></i></button>
+                        <button onclick="location.href='kontakt.html'" type="button" class="border-solid border-2 border-green rounded-full bg-green p-3 text-white mr-5">Skontaktuj się z nami</button>
+                        <button onclick="location.href='realizacje.html'" type="button" class="mt-5 border-solid border-2 border-green rounded-full p-3 text-green">Zobacz nasze realizacje<i class="fas fa-arrow-down ml-3"></i></button>
                     </div>
                 </div>
-                <div class="w-full xl:w-1/2 relative h-full">
-                    <img class="object-cover w-full h-full" src="img/trawa.jpg"></img>
-                    <div class="absolute bottom-0 right-0 bg-white text-3xl xl:text-5xl p-10">
-                        <i class="fas fa-arrow-left mr-5"></i>
-                        <i class="fas fa-arrow-right ml-5"></i>
+                <div id="controls-carousel" class="relative w-full xl:w-1/2 h-full" data-carousel="slide" data-carousel-interval="7000">
+                    <div class="relative w-full h-screen xl:h-full overflow-hidden rounded-lg">
+                        <div class="hidden duration-700 ease-in" data-carousel-item="active">
+                            <img class="object-cover w-full h-full absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="img/trawa.jpg"></img>
+                        </div>
+                        <div class="hidden duration-700 ease-in" data-carousel-item>
+                            <img class="object-cover w-full h-full absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="img/kwiaty.jpg"></img>
+                        </div>
+                        <div class="hidden duration-700 ease-in" data-carousel-item>
+                            <img class="object-cover w-full h-full absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="img/lawki.jpg"></img>
+                        </div>
+                        <div class="hidden duration-700 ease-in" data-carousel-item>
+                            <img class="object-cover w-full h-full absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="img/schody.jpg"></img>
+                        </div>
+                        <div class="absolute bottom-0 right-0 bg-white text-3xl xl:text-5xl p-10 z-20">
+                            <button type="button" data-carousel-prev><i class="fas fa-arrow-left mr-5"></i></button>
+                            <button type="button" data-carousel-next><i class="fas fa-arrow-right ml-5"></i></button>
+                        </div>
                     </div>
+                </div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
                 </div>
             </div>
         </main>
