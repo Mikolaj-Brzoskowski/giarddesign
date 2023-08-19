@@ -1140,6 +1140,11 @@ input:checked + .toggle-bg{
   margin-bottom: auto;
 }
 
+.mx-40{
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -1154,6 +1159,10 @@ input:checked + .toggle-bg{
 
 .mb-2{
   margin-bottom: 0.5rem;
+}
+
+.mb-20{
+  margin-bottom: 5rem;
 }
 
 .mb-4{
@@ -1214,6 +1223,10 @@ input:checked + .toggle-bg{
 
 .mt-5{
   margin-top: 1.25rem;
+}
+
+.mb-40{
+  margin-bottom: 10rem;
 }
 
 .block{
@@ -1322,6 +1335,14 @@ input:checked + .toggle-bg{
 
 .w-full{
   width: 100%;
+}
+
+.w-screen{
+  width: 100vw;
+}
+
+.w-2\/3{
+  width: 66.666667%;
 }
 
 .min-w-fit{
@@ -1645,11 +1666,6 @@ input:checked + .toggle-bg{
   background-color: rgb(255 255 255 / 0.5);
 }
 
-.bg-blue-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(235 245 255 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
@@ -1689,6 +1705,14 @@ input:checked + .toggle-bg{
 
 .p-8{
   padding: 2rem;
+}
+
+.p-20{
+  padding: 5rem;
+}
+
+.p-40{
+  padding: 10rem;
 }
 
 .px-12{
@@ -1971,22 +1995,6 @@ input:checked + .toggle-bg{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-.placeholder-shown\:w-full:-moz-placeholder-shown{
-  width: 100%;
-}
-
-.placeholder-shown\:w-full:placeholder-shown{
-  width: 100%;
-}
-
-.placeholder-shown\:w-0:-moz-placeholder-shown{
-  width: 0px;
-}
-
-.placeholder-shown\:w-0:placeholder-shown{
-  width: 0px;
-}
-
 .placeholder-shown\:w-12:-moz-placeholder-shown{
   width: 3rem;
 }
@@ -1995,48 +2003,12 @@ input:checked + .toggle-bg{
   width: 3rem;
 }
 
-.placeholder-shown\:w-8:-moz-placeholder-shown{
-  width: 2rem;
-}
-
-.placeholder-shown\:w-8:placeholder-shown{
-  width: 2rem;
-}
-
-.placeholder-shown\:w-4:-moz-placeholder-shown{
-  width: 1rem;
-}
-
-.placeholder-shown\:w-4:placeholder-shown{
-  width: 1rem;
-}
-
-.placeholder-shown\:border-transparent:-moz-placeholder-shown{
-  border-color: transparent;
-}
-
-.placeholder-shown\:border-transparent:placeholder-shown{
-  border-color: transparent;
-}
-
-.placeholder-shown\:pl-12:-moz-placeholder-shown{
-  padding-left: 3rem;
-}
-
-.placeholder-shown\:pl-12:placeholder-shown{
-  padding-left: 3rem;
-}
-
 .placeholder-shown\:pl-0:-moz-placeholder-shown{
   padding-left: 0px;
 }
 
 .placeholder-shown\:pl-0:placeholder-shown{
   padding-left: 0px;
-}
-
-.hover\:cursor-grab:hover{
-  cursor: grab;
 }
 
 .hover\:cursor-pointer:hover{
@@ -2091,16 +2063,12 @@ input:checked + .toggle-bg{
   cursor: text;
 }
 
-.focus\:pl-16:focus{
-  padding-left: 4rem;
+.focus\:pl-12:focus{
+  padding-left: 3rem;
 }
 
 .focus\:pr-4:focus{
   padding-right: 1rem;
-}
-
-.focus\:pl-12:focus{
-  padding-left: 3rem;
 }
 
 .focus\:outline-none:focus{
@@ -2223,6 +2191,10 @@ input:checked + .toggle-bg{
 }
 
 @media (min-width: 640px){
+  .sm\:right-0{
+    right: 0px;
+  }
+
   .sm\:mx-5{
     margin-left: 1.25rem;
     margin-right: 1.25rem;
@@ -2235,6 +2207,18 @@ input:checked + .toggle-bg{
 
   .sm\:w-96{
     width: 24rem;
+  }
+
+  .sm\:w-auto{
+    width: auto;
+  }
+
+  .sm\:w-1\/2{
+    width: 50%;
+  }
+
+  .sm\:origin-top-right{
+    transform-origin: top right;
   }
 
   .sm\:flex-row{
@@ -2265,6 +2249,12 @@ input:checked + .toggle-bg{
 
   .sm\:pt-10{
     padding-top: 2.5rem;
+  }
+
+  .sm\:ring-1{
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
   }
 }
 
@@ -2340,6 +2330,21 @@ input:checked + .toggle-bg{
     padding-bottom: 5rem;
   }
 
+  .md\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:px-60{
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  .md\:px-64{
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+
   .md\:text-5xl{
     font-size: 3rem;
     line-height: 1;
@@ -2348,12 +2353,6 @@ input:checked + .toggle-bg{
   .md\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .md\:hover\:scale-125:hover{
-    --tw-scale-x: 1.25;
-    --tw-scale-y: 1.25;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
 
@@ -2365,6 +2364,21 @@ input:checked + .toggle-bg{
   .lg\:mx-12{
     margin-left: 3rem;
     margin-right: 3rem;
+  }
+
+  .lg\:mx-40{
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .lg\:mx-60{
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
+  .lg\:mx-20{
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .lg\:mb-0{
@@ -2451,6 +2465,11 @@ input:checked + .toggle-bg{
     margin-right: 10rem;
   }
 
+  .xl\:mx-60{
+    margin-left: 15rem;
+    margin-right: 15rem;
+  }
+
   .xl\:ml-8{
     margin-left: 2rem;
   }
@@ -2487,6 +2506,11 @@ input:checked + .toggle-bg{
     padding: 10rem;
   }
 
+  .xl\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .xl\:text-5xl{
     font-size: 3rem;
     line-height: 1;
@@ -2503,20 +2527,4 @@ input:checked + .toggle-bg{
     margin-left: 10rem;
     margin-right: 10rem;
   }
-}
-
-.\[\&\:not\(\:-moz-placeholder-shown\)\]\:w-full:not(:-moz-placeholder-shown){
-  width: 100%;
-}
-
-.\[\&\:not\(\:placeholder-shown\)\]\:w-full:not(:placeholder-shown){
-  width: 100%;
-}
-
-.\[\&\:not\(placeholder-shown\)\]\:w-full:not(placeholder-shown){
-  width: 100%;
-}
-
-.\[\&\:not\(placeholder-shown\)\]\:focus\:w-full:focus:not(placeholder-shown){
-  width: 100%;
 }

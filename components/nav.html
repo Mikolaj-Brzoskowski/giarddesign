@@ -5,21 +5,21 @@
     <ul class="flex flex-col flex-nowrap md:flex-row flex-1 items-center justify-evenly md:mr-7">
         <li class="p-2 md:p-0">
             <div class="relative inline-block text-left">
-                <div>
+                <div class="flex flex-row">
                     <script src="js/dropdown.js"></script>
                     <button type="button" class="inline-flex w-full gap-x-1.5 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true" onclick="dropdownFunction()">
                     Oferta
-                    <i class="fas fa-chevron-down ml-1 mt-1"></i>
                     </button>
+                    <i class="fas fa-chevron-down ml-1 mt-1" id="dropdown-div"></i>
                 </div>
-                <div style="display: none" class="absolute right-0 mt-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-30" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" id="dropdown">
+                <div style="display: none" class="absolute mt-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-30" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" id="dropdown">
                     <div class="py-1" role="none">
                     <a href="oferta.html" class="text-gray-700 block px-4 py-2 hover:bg-gray-50 w-1/2 md:w-auto" role="menuitem" tabindex="-1" id="menu-item-0">Projekty</a>
                     <a href="oferta.html" class="text-gray-700 block px-4 py-2 hover:bg-gray-50 w-1/2 md:w-auto" role="menuitem" tabindex="-1" id="menu-item-1">Wizualizacje</a>
                     <a href="oferta.html" class="text-gray-700 block px-4 py-2 hover:bg-gray-50 w-1/2 md:w-auto" role="menuitem" tabindex="-1" id="menu-item-2">Realizacje</a>
                     </div>
                 </div>
-                </div>
+            </div>
         </li>
         <li class="p-2 md:p-0 md:ml-2 min-w-fit">
             <a class="hover:bg-gray-50" href="o_firmie.html">O firmie</a>

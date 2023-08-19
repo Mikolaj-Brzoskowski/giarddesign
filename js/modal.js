@@ -1,4 +1,3 @@
-// Grabs all the Elements by their IDs which we had given them
 let modal = document.getElementById("my-modal");
 
 let btn1 = document.getElementById("open-btn1");
@@ -43,4 +42,4 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-    }
+}
