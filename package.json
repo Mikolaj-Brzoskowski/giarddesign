@@ -8,5 +8,8 @@
   },
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
+  },
+  "dependencies": {
+    "flowbite": "^1.8.1"
   }
 }
