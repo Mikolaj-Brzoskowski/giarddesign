@@ -1971,8 +1971,76 @@ input:checked + .toggle-bg{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.placeholder-shown\:w-full:-moz-placeholder-shown{
+  width: 100%;
+}
+
+.placeholder-shown\:w-full:placeholder-shown{
+  width: 100%;
+}
+
+.placeholder-shown\:w-0:-moz-placeholder-shown{
+  width: 0px;
+}
+
+.placeholder-shown\:w-0:placeholder-shown{
+  width: 0px;
+}
+
+.placeholder-shown\:w-12:-moz-placeholder-shown{
+  width: 3rem;
+}
+
+.placeholder-shown\:w-12:placeholder-shown{
+  width: 3rem;
+}
+
+.placeholder-shown\:w-8:-moz-placeholder-shown{
+  width: 2rem;
+}
+
+.placeholder-shown\:w-8:placeholder-shown{
+  width: 2rem;
+}
+
+.placeholder-shown\:w-4:-moz-placeholder-shown{
+  width: 1rem;
+}
+
+.placeholder-shown\:w-4:placeholder-shown{
+  width: 1rem;
+}
+
+.placeholder-shown\:border-transparent:-moz-placeholder-shown{
+  border-color: transparent;
+}
+
+.placeholder-shown\:border-transparent:placeholder-shown{
+  border-color: transparent;
+}
+
+.placeholder-shown\:pl-12:-moz-placeholder-shown{
+  padding-left: 3rem;
+}
+
+.placeholder-shown\:pl-12:placeholder-shown{
+  padding-left: 3rem;
+}
+
+.placeholder-shown\:pl-0:-moz-placeholder-shown{
+  padding-left: 0px;
+}
+
+.placeholder-shown\:pl-0:placeholder-shown{
+  padding-left: 0px;
+}
+
 .hover\:cursor-grab:hover{
   cursor: grab;
+}
+
+.hover\:cursor-pointer:hover{
+  cursor: pointer;
 }
 
 .hover\:border-gray-300:hover{
@@ -2029,6 +2097,10 @@ input:checked + .toggle-bg{
 
 .focus\:pr-4:focus{
   padding-right: 1rem;
+}
+
+.focus\:pl-12:focus{
+  padding-left: 3rem;
 }
 
 .focus\:outline-none:focus{
@@ -2431,4 +2503,20 @@ input:checked + .toggle-bg{
     margin-left: 10rem;
     margin-right: 10rem;
   }
+}
+
+.\[\&\:not\(\:-moz-placeholder-shown\)\]\:w-full:not(:-moz-placeholder-shown){
+  width: 100%;
+}
+
+.\[\&\:not\(\:placeholder-shown\)\]\:w-full:not(:placeholder-shown){
+  width: 100%;
+}
+
+.\[\&\:not\(placeholder-shown\)\]\:w-full:not(placeholder-shown){
+  width: 100%;
+}
+
+.\[\&\:not\(placeholder-shown\)\]\:focus\:w-full:focus:not(placeholder-shown){
+  width: 100%;
 }
