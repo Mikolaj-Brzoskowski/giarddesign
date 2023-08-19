@@ -1,12 +1,18 @@
-
+let dropdown = document.getElementById("dropdown");
+let button = document.getElementById("menu-button");
 
 function dropdownFunction(){
-    const display = document.getElementById("dropdown").style.display;
-    if(display == "none") {
-        document.getElementById("dropdown").style.display = 'flex';
+    if(dropdown.style.display == "none") {
+        dropdown.style.display= 'flex';
     }
     else
     {
-        document.getElementById("dropdown").style.display = "none";
+        dropdown.style.display = "none";
+    }
+}
+
+window.onclick = function(event) {
+    if (event.target != button && event.target != dropdown) {
+        dropdown.style.display = "none";
     }
 }
