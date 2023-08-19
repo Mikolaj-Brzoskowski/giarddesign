@@ -15,14 +15,24 @@
           $("#nav-placeholder").load("./components/nav.html");
         });
         </script>
-        <main class="md:mx-10 lg:mx-20 md:my-40 p-32 md:p-20 bg-green flex flex-col md:flex-row h-auto items-center">
-            <p class="text-4xl xl:text-6xl mb-12 xl:ml-20 md:mr-24 xl:mr-40 xl:mt-12 font-montserrat font-medium text-white md:w-2/3">Zostańmy w kontakcie!
-                Znajdziesz nas na <span class="italic font-semibold">Instagramie</span>.
-            </p>
-            <div class="flex flex-col md:w-1/3 lg:w-auto">
-                <p class="text-white">Śledź nasze najnowsze realizacje!</p>
-                <button class="mt-5 border-solid border-2 border-white bg-white rounded-full p-3 text-green">Instagram<i class="fa-brands fa-instagram fa-xl ml-2"></i></button>
+        <main class="md:p-14 lg:mx-12 xl:mx-24 2xl:mx-40">
+            <div class="flex flex-col md:flex-row h-auto md:items-center bg-green p-8 sm:p-10 md:p-16 xl:p-40">
+                <div class="text-4xl md:text-5xl lg:text-6xl mb-5 md:mb-0 font-montserrat font-medium text-white md:w-2/3 md:mr-10 lg:mr-32">Zostańmy w kontakcie!
+                    Znajdziesz nas na <span class="italic font-semibold">Instagramie</span>.
+                </div>
+                <div class="flex flex-col w-auto">
+                    <div class="text-white">Śledź nasze najnowsze realizacje!</div>
+                    <div>
+                        <button class="mt-5 border-solid border-2 border-white bg-white rounded-full p-3 text-green min-w-fit w-1/3 md:w-full">Instagram<i class="fa-brands fa-instagram fa-xl ml-2"></i></button>
+                    </div>
+                </div>
             </div>
         </main>
+        <div id="footer-placeholder" class="flex"></div>
+        <script>
+        $(function(){
+          $("#footer-placeholder").load("./components/footer.html");
+        });
+        </script>
     </body>
 </html>
