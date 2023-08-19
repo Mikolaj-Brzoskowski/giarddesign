@@ -5,12 +5,12 @@
     <ul class="flex flex-col flex-nowrap md:flex-row flex-1 items-center justify-evenly md:mr-7">
         <li class="p-2 md:p-0">
             <div class="relative inline-block text-left">
-                <div class="flex flex-row">
+                <div>
                     <script src="js/dropdown.js"></script>
                     <button type="button" class="inline-flex w-full gap-x-1.5 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true" onclick="dropdownFunction()">
                     Oferta
+                    <i class="fas fa-chevron-down ml-1 mt-1" id="menu-button2"></i>
                     </button>
-                    <i class="fas fa-chevron-down ml-1 mt-1" id="dropdown-div"></i>
                 </div>
                 <div style="display: none" class="absolute mt-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-30" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" id="dropdown">
                     <div class="py-1" role="none">
