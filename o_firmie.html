@@ -8,27 +8,34 @@
         <script src="https://kit.fontawesome.com/563efd8ee7.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
-    <body class="font-inter font-normal flex flex-col h-screen">
+    <body class="font-inter font-normal flex flex-col ">
         <div id="nav-placeholder" class="flex"></div>
         <script>
         $(function(){
           $("#nav-placeholder").load("./components/nav.html");
         });
         </script>
-        <main class="flex grow w-full h-full xl:h-[calc(100%-80px)]">
+        <main class="flex grow w-full h-full xl:h-[calc(100vh-80px)]">
             <div class="flex flex-col xl:flex-row bg-green h-full">
-                <div class="w-full xl:w-1/2 relative h-full">
+                <div class="w-full xl:w-1/2 relative h-[50vh] md:h-full">
                     <img class="object-cover w-full h-full transform -scale-x-100" src="img/ogrod.jpg"></img>
                 </div>
-                <div class="w-full xl:w-1/2  p-28 flex-1 bg-green">
-                    <p class="text-xs text-white mb-12 xl:ml-8 xl:mr-12 xl:mt-12">O firmie</p>
-                    <p class="text-4xl xl:text-6xl mb-12 xl:ml-8 xl:mr-12 xl:mt-12 font-montserrat font-semibold text-white">Tworzymy z <span class="italic">pasją</span></p>
+                <div class="w-full xl:w-1/2 p-8 sm:p-28 flex-1 bg-green">
+                    <p class="text-xs text-white mx-5 mb-12 xl:ml-8 xl:mr-12 xl:mt-12">O firmie</p>
+                    <p class="text-4xl xl:text-6xl  mx-5 mb-12 xl:ml-8 xl:mr-12 xl:mt-12 font-montserrat font-medium text-white">Tworzymy z <span class="italic font-inter">pasją</span></p>
                     <p class="mx-5 xl:ml-8 xl:mr-12 text-white">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
-                    <div class="mt-10 xl:ml-8 xl:mr-12">
+                    <div class="mt-10 xl:ml-8 xl:mr-12 mx-5">
                         <button class="mt-5 border-solid border-2 border-white rounded-full p-3 text-white">Poznaj nas bliżej<i class="fas fa-arrow-right ml-3"></i></button>
                     </div>
                 </div>
             </div>
         </main>
+        <div id="footer-placeholder" class="flex"></div>
+        <script>
+            $(function(){
+            $("#footer-placeholder").load("./components/footer.html");
+            });
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     </body>
 </html>
