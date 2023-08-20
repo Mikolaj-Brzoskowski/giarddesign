@@ -33,13 +33,6 @@ header.innerHTML += 'Realizacje!';
 text.innerHTML += 'Realizujemy zadania od najłatwiejszych po niemożliwe!'
 }
 
-
 button.onclick = function() {
 modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
 }
