@@ -7,14 +7,38 @@
         <link href="style.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/563efd8ee7.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="../node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
+        <script src="../node_modules/imagesloaded/imagesloaded.pkgd.min.js"></script>
     </head>
-    <body class="font-inter font-normal flex flex-col h-screen">
+    <body class="font-inter font-normal">
         <div id="nav-placeholder" class="flex"></div>
         <script>
         $(function(){
           $("#nav-placeholder").load("./components/nav.html");
         });
         </script>
-        
+        <main class="bg-beige">
+            <div class="grid">
+                    <div class="grid-sizer"></div>
+                    <div class="gutter-sizer"></div>
+                    <div class="grid-item grid-item--height3"><img src="img/schody.jpg" class="object-cover h-full w-full"></img></div>
+                    <div class="grid-item"><img src="img/basen.jpg" class="object-cover h-full w-full"></img></div>
+                    <div class="grid-item grid-item--height2 object-cover"><img src="img/kwiaty.jpg" class="object-cover h-full w-full"></img></div>
+                    <div class="grid-item grid-item--height2"><img src="img/rybki.jpg" class="object-cover h-full w-full"></img></div>
+                    <div class="grid-item grid-item--height3"><img src="img/sciezka.jpg" class="object-cover h-full w-full"></img></div>
+                    <div class="grid-item grid-item--height2"><img src="img/lawki.jpg" class="object-cover h-full w-full"></img></div>
+                    <div class="grid-item grid-item--height3"><img src="img/taras.jpg" class="object-cover h-full w-full"></img></div>
+                    <div class="grid-item "><img src="img/drzewko.jpg" class="object-cover h-full w-full"></img></div>
+                    <div class="grid-item"><img src="img/dach.jpg" class="object-cover h-full w-full"></img></div>
+              </div>
+              <script src="js/masonry.js"></script>
+        </main>
+        <div id="footer-placeholder" class="flex"></div>
+        <script>
+            $(function(){
+            $("#footer-placeholder").load("./components/footer.html");
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     </body>
 </html>

@@ -5,3 +5,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.grid {
+    max-width: 100vw;
+}
+
+.grid-item {
+    height: 338px;
+    margin-bottom: 42px;
+}
+  
+.grid-item--height2 { height: 452px; }
+.grid-item--height3 { height: 600px; }
+
+.grid-sizer,
+.grid-item { width: 100%; }
+
+@media (min-width: 768px) { 
+    .grid-sizer,
+    .grid-item { width: 48%; }
+
+    .gutter-sizer { width: 4%; }
+}
+  
+@media (min-width: 1024px) { 
+    .grid-sizer,
+    .grid-item { width: 30%; }
+
+    .gutter-sizer { width: 5%; }
+}
+
