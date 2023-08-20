@@ -1063,6 +1063,10 @@ input:checked + .toggle-bg{
   bottom: 0px;
 }
 
+.-top-32{
+  top: -8rem;
+}
+
 .bottom-0{
   bottom: 0px;
 }
@@ -1272,16 +1276,16 @@ input:checked + .toggle-bg{
   height: 3rem;
 }
 
-.h-2\/3{
-  height: 66.666667%;
-}
-
 .h-3{
   height: 0.75rem;
 }
 
 .h-4{
   height: 1rem;
+}
+
+.h-4\/5{
+  height: 80%;
 }
 
 .h-6{
@@ -1314,14 +1318,6 @@ input:checked + .toggle-bg{
 
 .h-screen{
   height: 100vh;
-}
-
-.h-3\/4{
-  height: 75%;
-}
-
-.h-4\/5{
-  height: 80%;
 }
 
 .w-1\/2{
@@ -1370,10 +1366,6 @@ input:checked + .toggle-bg{
 
 .w-full{
   width: 100%;
-}
-
-.w-3\/4{
-  width: 75%;
 }
 
 .min-w-fit{
@@ -1610,6 +1602,11 @@ input:checked + .toggle-bg{
   border-style: solid;
 }
 
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .border-blue-600{
   --tw-border-opacity: 1;
   border-color: rgb(28 100 242 / var(--tw-border-opacity));
@@ -1786,6 +1783,11 @@ input:checked + .toggle-bg{
 .px-7{
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .py-1{
@@ -2033,6 +2035,11 @@ input:checked + .toggle-bg{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.gradient-mask-b-30{
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 30%, transparent 100%);
+          mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 30%, transparent 100%);
+}
+
 .grid {
   max-width: 100vw;
 }
@@ -2143,6 +2150,12 @@ input:checked + .toggle-bg{
 
 .focus\:w-full:focus{
   width: 100%;
+}
+
+.focus\:scale-85:focus{
+  --tw-scale-x: 0.85;
+  --tw-scale-y: 0.85;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .focus\:cursor-text:focus{
@@ -2388,12 +2401,16 @@ input:checked + .toggle-bg{
     display: flex;
   }
 
+  .md\:h-2\/3{
+    height: 66.666667%;
+  }
+
   .md\:h-full{
     height: 100%;
   }
 
-  .md\:h-2\/3{
-    height: 66.666667%;
+  .md\:w-1\/3{
+    width: 33.333333%;
   }
 
   .md\:w-2\/3{
@@ -2406,10 +2423,6 @@ input:checked + .toggle-bg{
 
   .md\:w-full{
     width: 100%;
-  }
-
-  .md\:w-1\/3{
-    width: 33.333333%;
   }
 
   .md\:flex-row{

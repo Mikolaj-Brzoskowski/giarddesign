@@ -21,7 +21,7 @@
                 <p class="text-xs ml-0.5 sm:ml-1 mb-4 xl:ml-8 xl:mr-12 xl:mt-6 text-green">Realizacje</p>
                 <p class="text-4xl sm:text-6xl xl:ml-8 xl:mr-12 font-montserrat font-medium">Nasze <span class="italic font-inter">projekty</span></p>
             </div>
-            <div class="grid">
+                <div class="grid gradient-mask-b-30">
                     <div class="grid-sizer"></div>
                     <div class="gutter-sizer"></div>
                     <div class="grid-item grid-item--height3 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('1')" ><img src="img/schody.jpg" class="object-cover h-full w-full"></img></div>
@@ -33,7 +33,10 @@
                     <div class="grid-item grid-item--height3 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('7')" ><img src="img/taras.jpg" class="object-cover h-full w-full"></img></div>
                     <div class="grid-item lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('8')" ><img src="img/drzewko.jpg" class="object-cover h-full w-full"></img></div>
                     <div class="grid-item lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('9')" ><img src="img/dach.jpg" class="object-cover h-full w-full"></img></div>
-              </div>
+                </div>
+                <div class="flex justify-center relative">
+                    <button class="absolute px-8 border-solid border-2 border-black rounded-full p-3 -top-32 focus:scale-85">Rozwiń<i class="fas fa-arrow-down ml-3"></i></button>
+                </div>
               <script src="js/masonry.js"></script>
               <!-- button hidden because of image flickering when swiching images with buttons -->
               <div class="fixed hidden inset-0 bg-black bg-opacity-50 overflow-y-hidden h-full w-full z-30" id="my-modal">
