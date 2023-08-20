@@ -12,6 +12,7 @@
   "dependencies": {
     "flowbite": "^1.8.1",
     "imagesloaded": "^5.0.0",
-    "masonry-layout": "^4.2.2"
+    "masonry-layout": "^4.2.2",
+    "tailwind-gradient-mask-image": "^1.0.0"
   }
 }
