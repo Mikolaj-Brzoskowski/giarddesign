@@ -1264,6 +1264,10 @@ input:checked + .toggle-bg{
   display: grid;
 }
 
+.contents{
+  display: contents;
+}
+
 .hidden{
   display: none;
 }
@@ -1320,6 +1324,10 @@ input:checked + .toggle-bg{
   height: 100vh;
 }
 
+.h-\[1516px\]{
+  height: 1516px;
+}
+
 .w-1\/2{
   width: 50%;
 }
@@ -1366,6 +1374,10 @@ input:checked + .toggle-bg{
 
 .w-full{
   width: 100%;
+}
+
+.w-screen{
+  width: 100vw;
 }
 
 .min-w-fit{

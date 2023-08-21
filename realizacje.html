@@ -21,22 +21,33 @@
                 <p class="text-xs ml-0.5 sm:ml-1 mb-4 xl:ml-8 xl:mr-12 xl:mt-6 text-green">Realizacje</p>
                 <p class="text-4xl sm:text-6xl xl:ml-8 xl:mr-12 font-montserrat font-medium">Nasze <span class="italic font-inter">projekty</span></p>
             </div>
-                <div class="grid gradient-mask-b-30">
+            <div class="grid gradient-mask-b-30" id="images">
+                <div class="grid-sizer"></div>
+                <div class="gutter-sizer"></div>
+                <div class="grid-item grid-item--height3 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('1')" ><img src="img/schody.jpg" class="object-cover h-full w-full"></img></div>
+                <div class="grid-item lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('2')" ><img src="img/basen.jpg" class="object-cover h-full w-full"></img></div>
+                <div class="grid-item grid-item--height2 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('3')" ><img src="img/kwiaty.jpg" class="object-cover h-full w-full"></img></div>
+                <div class="grid-item grid-item--height2 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('4')" ><img src="img/rybki.jpg" class="object-cover h-full w-full"></img></div>
+                <div class="grid-item grid-item--height3 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('5')" ><img src="img/sciezka.jpg" class="object-cover h-full w-full"></img></div>
+                <div class="grid-item grid-item--height2 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('6')" ><img src="img/lawki.jpg" class="object-cover h-full w-full"></img></div>
+                <div class="grid-item grid-item--height3 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('7')" ><img src="img/taras.jpg" class="object-cover h-full w-full"></img></div>
+                <div class="grid-item lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('8')" ><img src="img/drzewko.jpg" class="object-cover h-full w-full"></img></div>
+                <div class="grid-item lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('9')" ><img src="img/dach.jpg" class="object-cover h-full w-full"></img></div>
+            </div>
+                <div class="hidden" style="position: relative; height: 1516px;" id="more-images">
                     <div class="grid-sizer"></div>
                     <div class="gutter-sizer"></div>
-                    <div class="grid-item grid-item--height3 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('1')" ><img src="img/schody.jpg" class="object-cover h-full w-full"></img></div>
-                    <div class="grid-item lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('2')" ><img src="img/basen.jpg" class="object-cover h-full w-full"></img></div>
-                    <div class="grid-item grid-item--height2 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('3')" ><img src="img/kwiaty.jpg" class="object-cover h-full w-full"></img></div>
-                    <div class="grid-item grid-item--height2 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('4')" ><img src="img/rybki.jpg" class="object-cover h-full w-full"></img></div>
-                    <div class="grid-item grid-item--height3 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('5')" ><img src="img/sciezka.jpg" class="object-cover h-full w-full"></img></div>
-                    <div class="grid-item grid-item--height2 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('6')" ><img src="img/lawki.jpg" class="object-cover h-full w-full"></img></div>
-                    <div class="grid-item grid-item--height3 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('7')" ><img src="img/taras.jpg" class="object-cover h-full w-full"></img></div>
-                    <div class="grid-item lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('8')" ><img src="img/drzewko.jpg" class="object-cover h-full w-full"></img></div>
-                    <div class="grid-item lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('9')" ><img src="img/dach.jpg" class="object-cover h-full w-full"></img></div>
+                    <div class="grid-item lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('10')" ><img src="img/kwiaty2.jpg" class="object-cover h-full w-full"></img></div>
+                    <div class="grid-item grid-item--height2 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('11')" ><img src="img/kwiaty3.jpg" class="object-cover h-full w-full"></img></div>
+                    <div class="grid-item grid-item--height2 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('12')" ><img src="img/sciezka2.jpg" class="object-cover h-full w-full"></img></div>
+                    <div class="grid-item grid-item--height2 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('13')" ><img src="img/kwiaty4.jpg" class="object-cover h-full w-full"></img></div>
+                    <div class="grid-item lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('14')" ><img src="img/ogrod2.jpg" class="object-cover h-full w-full"></img></div>
+                    <div class="grid-item lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('15')" ><img src="img/fontanna.jpg" class="object-cover h-full w-full"></img></div>
                 </div>
-                <div class="flex justify-center relative">
-                    <button class="absolute px-8 border-solid border-2 border-black rounded-full p-3 -top-32 focus:scale-85">Rozwiń<i class="fas fa-arrow-down ml-3"></i></button>
+                <div class="flex justify-center relative" id="button">
+                    <button class="absolute px-8 border-solid border-2 border-black rounded-full p-3 -top-32 focus:scale-85" onclick="showMoreimages()">Rozwiń<i class="fas fa-arrow-down ml-3"></i></button>
                 </div>
+                <script src="js/moreButton.js"></script>
               <script src="js/masonry.js"></script>
               <!-- button hidden because of image flickering when swiching images with buttons -->
               <div class="fixed hidden inset-0 bg-black bg-opacity-50 overflow-y-hidden h-full w-full z-30" id="my-modal">
@@ -70,16 +81,42 @@
                             <div class="hidden duration-700 ease-in" data-carousel-item>
                                 <img class="object-contain w-full h-full absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="img/dach.jpg"></img>
                             </div>
+                            <div class="hidden" id="hidden">
+                                <div class="hidden duration-700 ease-in" data-carousel-item>
+                                    <img class="object-contain w-full h-full absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="img/kwiaty2.jpg"></img>
+                                </div>
+                                <div class="hidden duration-700 ease-in" data-carousel-item>
+                                    <img class="object-contain w-full h-full absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="img/kwiaty3.jpg"></img>
+                                </div>
+                                <div class="hidden duration-700 ease-in" data-carousel-item>
+                                    <img class="object-contain w-full h-full absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="img/sciezka2.jpg"></img>
+                                </div>
+                                <div class="hidden duration-700 ease-in" data-carousel-item>
+                                    <img class="object-contain w-full h-full absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="img/kwiaty4.jpg"></img>
+                                </div>
+                                <div class="hidden duration-700 ease-in" data-carousel-item>
+                                    <img class="object-contain w-full h-full absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="img/ogrod2.jpg"></img>
+                                </div>
+                                <div class="hidden duration-700 ease-in" data-carousel-item>
+                                    <img class="object-contain w-full h-full absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="img/fontanna.jpg"></img>
+                                </div>
+                            </div>
                             <div class="absolute z-30 space-x-3 -translate-x-1/2 bottom-5 left-1/2 hidden">
-                                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0" id="1"></button>
-                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1" id="2"></button>
-                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2" id="3"></button>
-                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3" id="4"></button>
-                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4" id="5"></button>
-                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="5" id="6"></button>
-                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="6" id="7"></button>
-                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="7" id="8"></button>
-                                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="8" id="9"></button>
+                                <button type="button" data-carousel-slide-to="0" id="1"></button>
+                                <button type="button" data-carousel-slide-to="1" id="2"></button>
+                                <button type="button" data-carousel-slide-to="2" id="3"></button>
+                                <button type="button" data-carousel-slide-to="3" id="4"></button>
+                                <button type="button" data-carousel-slide-to="4" id="5"></button>
+                                <button type="button" data-carousel-slide-to="5" id="6"></button>
+                                <button type="button" data-carousel-slide-to="6" id="7"></button>
+                                <button type="button" data-carousel-slide-to="7" id="8"></button>
+                                <button type="button" data-carousel-slide-to="8" id="9"></button>
+                                <button type="button" data-carousel-slide-to="9" id="10"></button>
+                                <button type="button" data-carousel-slide-to="10" id="11"></button>
+                                <button type="button" data-carousel-slide-to="11" id="12"></button>
+                                <button type="button" data-carousel-slide-to="12" id="13"></button>
+                                <button type="button" data-carousel-slide-to="13" id="14"></button>
+                                <button type="button" data-carousel-slide-to="14" id="15"></button>
                             </div>
                             <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
                                 <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
