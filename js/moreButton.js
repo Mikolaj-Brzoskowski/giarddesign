@@ -1,13 +1,11 @@
 let images = document.getElementById('images');
-let moreButton = document.getElementById('button')
+let moreButton = document.getElementById('more-button')
 let moreImages = document.getElementById('more-images');
-let hidden = document.getElementById('hidden');
 
 function showMoreimages(){
     images.setAttribute('class', 'grid')
     moreButton.style.display = 'none'
     moreImages.setAttribute('class', 'grid')
-    $("#hidden").contents().unwrap();
     $('.grid').masonry({
         columnWidth: '.grid-sizer',
         gutter: '.gutter-sizer',

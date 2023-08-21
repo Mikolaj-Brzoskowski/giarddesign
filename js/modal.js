@@ -1,16 +1,16 @@
-let modal = document.getElementById("my-modal");
+let popup = document.getElementById("popup");
 
-let btn1 = document.getElementById("open-btn1");
-let btn2 = document.getElementById("open-btn2");
-let btn3 = document.getElementById("open-btn3");
+let btn1 = document.getElementById("projekty");
+let btn2 = document.getElementById("wizualizacje");
+let btn3 = document.getElementById("realizacje");
 
-let button = document.getElementById("ok-btn");
+let close = document.getElementById("close-popup");
 
 let header = document.getElementById('modalHeader');
 let text = document.getElementById('modalText');
 
 btn1.onclick = function() {
-modal.style.display = "block";
+    popup.style.display = "block";
 header.innerHTML = ''
 text.innerHTML = ''
 header.innerHTML += 'Projekty!';
@@ -18,21 +18,17 @@ text.innerHTML += 'Poznaj nasze projekty! Same najlepsze!'
 }
 
 btn2.onclick = function() {
-modal.style.display = "block";
+popup.style.display = "block";
 header.innerHTML = ''
 text.innerHTML = ''
 header.innerHTML += 'Wizualizacje!';
 text.innerHTML += 'Oto nasze wizualizacje! Czy nie są przepiękne?'
 }
 
-btn3.onclick = function() {
-modal.style.display = "block";
-header.innerHTML = ''
-text.innerHTML = ''
-header.innerHTML += 'Realizacje!';
-text.innerHTML += 'Realizujemy zadania od najłatwiejszych po niemożliwe!'
+btn3.onclick= function() {
+    location.href='#realizacje-section'
 }
 
-button.onclick = function() {
-modal.style.display = "none";
+close.onclick = function() {
+    popup.style.display = "none";
 }

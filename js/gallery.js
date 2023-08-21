@@ -1,16 +1,16 @@
-let modal = document.getElementById("my-modal");
+let gallery = document.getElementById("gallery");
 
-let button = document.getElementById("ok-btn");
+let button = document.getElementById("close-gallery");
 
 let body = document.body;
 
 function openGallery(number) {
     document.getElementById(number).click();
-    modal.style.display = "block";
-    body.style.overflow = "hidden"
+    gallery.style.display = "block";
+    // body.style.overflow = "hidden"
 }
 
 button.onclick = function() {
-    modal.style.display = "none";
-    body.style.overflow = "auto"
+    gallery.style.display = "none";
+    // body.style.overflow = "auto"
 }
