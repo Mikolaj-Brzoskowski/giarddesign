@@ -8,4 +8,9 @@
 - `dropdown full width on mobile` and ~~out of focus hide~~
 - ~~oferta bigger bottom margin and centering text~~
 - `slides mobile resposible (abandoned)` 
-- website as one pager?
+- ~~website as one pager?~~
+- ~~footer text center~~
+- ~~search border z change~~
+- ~~modal mobile width~~
+- ~~empty gallery slides~~
+- sticky navbar
