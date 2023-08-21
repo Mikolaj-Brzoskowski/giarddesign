@@ -1,16 +1,17 @@
+# Readme
+This is small responsive website made as recruiment task for adResponse. It contains five sections:
+- introduction - section with images slider
+- offer - section with three boxed, two of them displays modal after click, third one is jump to last section
+- about section
+- accomplishment - section that introduce user to projects made by copmany (using images masonry display and images gallery upon click on image)
+- contact 
+
+Besides it also has:
+- Navigation bar with dropdown and expanding search bar (search funtionality not implemented)
+- footer with futher contact options and adRespect trademark
+
 ## TODO
 - light/dark mode
 - animations
-- ~~more images on realizacje~~
-- ~~show clicked image in images gallery~~
 - short project description
 - delete .html extensions from href before final prod build on github pages (for aestetic URLs)
-- `dropdown full width on mobile` and ~~out of focus hide~~
-- ~~oferta bigger bottom margin and centering text~~
-- `slides mobile resposible (abandoned)` 
-- ~~website as one pager?~~
-- ~~footer text center~~
-- ~~search border z change~~
-- ~~modal mobile width~~
-- ~~empty gallery slides~~
-- ~~sticky navbar~~
