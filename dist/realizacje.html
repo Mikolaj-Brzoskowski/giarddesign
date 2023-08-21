@@ -3,31 +3,32 @@
         <p class="text-xs ml-0.5 sm:ml-1 mb-4 xl:ml-8 xl:mr-12 xl:mt-6 text-green">Realizacje</p>
         <p class="text-4xl sm:text-6xl xl:ml-8 xl:mr-12 font-montserrat font-medium">Nasze <span class="italic font-inter">projekty</span></p>
     </div>
+    <!-- gradient mask causes images hover upscale to limit display to grid div -->
     <div class="grid gradient-mask-b-30" id="images">
         <div class="grid-sizer"></div>
         <div class="gutter-sizer"></div>
-        <div class="grid-item grid-item--height3 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('1')" ><img src="img/schody.jpg" class="object-cover h-full w-full"></img></div>
-        <div class="grid-item lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('2')" ><img src="img/basen.jpg" class="object-cover h-full w-full"></img></div>
-        <div class="grid-item grid-item--height2 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('3')" ><img src="img/kwiaty.jpg" class="object-cover h-full w-full"></img></div>
-        <div class="grid-item grid-item--height2 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('4')" ><img src="img/rybki.jpg" class="object-cover h-full w-full"></img></div>
-        <div class="grid-item grid-item--height3 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('5')" ><img src="img/sciezka.jpg" class="object-cover h-full w-full"></img></div>
-        <div class="grid-item grid-item--height2 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('6')" ><img src="img/lawki.jpg" class="object-cover h-full w-full"></img></div>
-        <div class="grid-item grid-item--height3 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('7')" ><img src="img/taras.jpg" class="object-cover h-full w-full"></img></div>
-        <div class="grid-item lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('8')" ><img src="img/drzewko.jpg" class="object-cover h-full w-full"></img></div>
-        <div class="grid-item lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('9')" ><img src="img/dach.jpg" class="object-cover h-full w-full"></img></div>
+        <div class="grid-item grid-item--height3 transition ease-in-out hover:-translate-y-1 lg:hover:scale-125 duration-300 hover:cursor-pointer hover:z-10" onclick="openGallery('1')" ><img src="img/schody.jpg" class="object-cover h-full w-full"></img></div>
+        <div class="grid-item transition ease-in-out hover:-translate-y-1 lg:hover:scale-125 duration-300 hover:cursor-pointer hover:z-10" onclick="openGallery('2')" ><img src="img/basen.jpg" class="object-cover h-full w-full"></img></div>
+        <div class="grid-item grid-item--height2 transition ease-in-out hover:-translate-y-1 lg:hover:scale-125 duration-300 hover:cursor-pointer hover:z-10" onclick="openGallery('3')" ><img src="img/kwiaty.jpg" class="object-cover h-full w-full"></img></div>
+        <div class="grid-item grid-item--height2 transition ease-in-out hover:-translate-y-1 lg:hover:scale-125 duration-300 hover:cursor-pointer hover:z-10" onclick="openGallery('4')" ><img src="img/rybki.jpg" class="object-cover h-full w-full"></img></div>
+        <div class="grid-item grid-item--height3 transition ease-in-out hover:-translate-y-1 lg:hover:scale-125 duration-300 hover:cursor-pointer hover:z-10" onclick="openGallery('5')" ><img src="img/sciezka.jpg" class="object-cover h-full w-full"></img></div>
+        <div class="grid-item grid-item--height2 transition ease-in-out hover:-translate-y-1 lg:hover:scale-125 duration-300 hover:cursor-pointer hover:z-10" onclick="openGallery('6')" ><img src="img/lawki.jpg" class="object-cover h-full w-full"></img></div>
+        <div class="grid-item grid-item--height3 transition ease-in-out hover:-translate-y-1 lg:hover:scale-125 duration-300 hover:cursor-pointer hover:z-10" onclick="openGallery('7')" ><img src="img/taras.jpg" class="object-cover h-full w-full"></img></div>
+        <div class="grid-item transition ease-in-out hover:-translate-y-1 lg:hover:scale-125 duration-300 hover:cursor-pointer hover:z-10" onclick="openGallery('8')" ><img src="img/drzewko.jpg" class="object-cover h-full w-full"></img></div>
+        <div class="grid-item transition ease-in-out hover:-translate-y-1 lg:hover:scale-125 duration-300 hover:cursor-pointer hover:z-10" onclick="openGallery('9')" ><img src="img/dach.jpg" class="object-cover h-full w-full"></img></div>
     </div>
         <div class="hidden" style="position: relative; height: 1516px;" id="more-images">
             <div class="grid-sizer"></div>
             <div class="gutter-sizer"></div>
-            <div class="grid-item lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('10')" ><img src="img/kwiaty2.jpg" class="object-cover h-full w-full"></img></div>
-            <div class="grid-item grid-item--height2 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('11')" ><img src="img/kwiaty3.jpg" class="object-cover h-full w-full"></img></div>
-            <div class="grid-item grid-item--height2 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('12')" ><img src="img/sciezka2.jpg" class="object-cover h-full w-full"></img></div>
-            <div class="grid-item grid-item--height2 lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('13')" ><img src="img/kwiaty4.jpg" class="object-cover h-full w-full"></img></div>
-            <div class="grid-item lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('14')" ><img src="img/ogrod2.jpg" class="object-cover h-full w-full"></img></div>
-            <div class="grid-item lg:hover:scale-125 hover:cursor-pointer hover:z-10" onclick="openGallery('15')" ><img src="img/fontanna.jpg" class="object-cover h-full w-full"></img></div>
+            <div class="grid-item transition ease-in-out hover:-translate-y-1 lg:hover:scale-125 duration-300 hover:cursor-pointer hover:z-10" onclick="openGallery('10')" ><img src="img/kwiaty2.jpg" class="object-cover h-full w-full"></img></div>
+            <div class="grid-item grid-item--height2 transition ease-in-out hover:-translate-y-1 lg:hover:scale-125 duration-300 hover:cursor-pointer hover:z-10" onclick="openGallery('11')" ><img src="img/kwiaty3.jpg" class="object-cover h-full w-full"></img></div>
+            <div class="grid-item grid-item--height2 transition ease-in-out hover:-translate-y-1 lg:hover:scale-125 duration-300 hover:cursor-pointer hover:z-10" onclick="openGallery('12')" ><img src="img/sciezka2.jpg" class="object-cover h-full w-full"></img></div>
+            <div class="grid-item grid-item--height2 transition ease-in-out hover:-translate-y-1 lg:hover:scale-125 duration-300 hover:cursor-pointer hover:z-10" onclick="openGallery('13')" ><img src="img/kwiaty4.jpg" class="object-cover h-full w-full"></img></div>
+            <div class="grid-item transition ease-in-out hover:-translate-y-1 lg:hover:scale-125 duration-300 hover:cursor-pointer hover:z-10" onclick="openGallery('14')" ><img src="img/ogrod2.jpg" class="object-cover h-full w-full"></img></div>
+            <div class="grid-item transition ease-in-out hover:-translate-y-1 lg:hover:scale-125 duration-300 hover:cursor-pointer hover:z-10" onclick="openGallery('15')" ><img src="img/fontanna.jpg" class="object-cover h-full w-full"></img></div>
         </div>
         <div class="flex justify-center relative" id="more-button">
-            <button class="absolute px-8 border-solid border-2 border-black rounded-full p-3 -top-32 focus:scale-85" onclick="showMoreimages()">Rozwiń<i class="fas fa-arrow-down ml-3"></i></button>
+            <button class="absolute px-8 border-solid border-2 border-black rounded-full p-3 -top-32 focus:scale-85 animate-bounce" onclick="showMoreimages()">Rozwiń<i class="fas fa-arrow-down ml-3"></i></button>
         </div>
         <script src="js/moreButton.js"></script>
         <script src="js/masonry.js"></script>
@@ -123,5 +124,4 @@
         </div>
     </div>
     <script src="js/gallery.js"></script>
-    <script src="js/index.js"></script>
 </div>
