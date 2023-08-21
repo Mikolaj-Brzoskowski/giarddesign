@@ -13,4 +13,4 @@
 - ~~search border z change~~
 - ~~modal mobile width~~
 - ~~empty gallery slides~~
-- sticky navbar
+- ~~sticky navbar~~
