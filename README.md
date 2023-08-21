@@ -1,7 +1,7 @@
 ## TODO
 - light/dark mode
 - animations
-- more images on realizacje
+- ~~more images on realizacje~~
 - ~~show clicked image in images gallery~~
 - short project description
 - delete .html extensions from href before final prod build on github pages (for aestetic URLs)
