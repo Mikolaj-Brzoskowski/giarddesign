@@ -8,3 +8,4 @@
 - `dropdown full width on mobile` and ~~out of focus hide~~
 - ~~oferta bigger bottom margin and centering text~~
 - `slides mobile resposible (abandoned)` 
+- website as one pager?
