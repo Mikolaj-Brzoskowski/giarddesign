@@ -11,4 +11,8 @@ window.onclick = function(event) {
     if (event.target == popup) {
         popup.style.display = "none";
     }
+    if (event.target == gallery) {
+        gallery.style.display = "none";
+        document.body.style.overflow = "auto"
+    }
 }
