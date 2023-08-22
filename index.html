@@ -8,6 +8,18 @@
         <script src="https://kit.fontawesome.com/563efd8ee7.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <script type="importmap">
+            {
+              "imports": {
+                "dayjs": "https://cdn.skypack.dev/dayjs@1.10.7",
+              }
+            }
+            </script>
+            <script type="module">
+              import dayjs from 'dayjs';
+            
+              console.log(dayjs('2019-01-25').format('YYYY-MM-DDTHH:mm:ssZ[Z]'));
+            </script>
     </head>
     <body class="font-inter font-normal flex flex-col" id="index">
         <nav class="md:flex p-4 w-full items-center bg-white md:sticky md:top-0 z-30" id="nav"></nav>
@@ -16,13 +28,14 @@
           $("#nav").load("./components/nav.html");
         });
         </script>
+       
         <main class="flex grow h-full flex-col bg-grey">
             <div class="flex flex-col xl:flex-row bg-beige w-full xl:h-[calc(100vh-80px)]">
                 <div class="w-full xl:w-1/2 h-full p-8 sm:p-28">
                     <p class="text-4xl xl:text-6xl mb-12 xl:ml-8 xl:mr-12 xl:mt-12 font-montserrat font-semibold mx-5">Nowoczesna aranżacja Twojego ogrodu</p>
                     <p class="sm:mx-5 xl:ml-8 xl:mr-12 mx-5">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
                     <div class="mt-10 xl:ml-8 xl:mr-12 mx-5">
-                        <button onclick="location.href='#footer'" type="button" class="border-solid border-2 border-green rounded-full bg-green p-3 text-white mr-5 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">Skontaktuj się z nami</button>
+                        <button onclick="location.href='#kontakt'" type="button" class="border-solid border-2 border-green rounded-full bg-green p-3 text-white mr-5 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">Skontaktuj się z nami</button>
                         <button onclick="location.href='#realizacje-section'" type="button" class="mt-5 border-solid border-2 border-green rounded-full p-3 text-green transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">Zobacz nasze realizacje<i class="fas fa-arrow-down ml-3 animate-bounce"></i></button>
                     </div>
                 </div>
