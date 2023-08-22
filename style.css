@@ -2145,6 +2145,16 @@ input:checked + .toggle-bg{
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.hover\:animate-spin:hover{
+  animation: spin 1s linear infinite;
+}
+
 .hover\:cursor-pointer:hover{
   cursor: pointer;
 }
