@@ -12,5 +12,3 @@ Besides it also has:
 
 ## TODO
 - light/dark mode
-- ~~image reduce size and loading times~~
-- ~~mobile menu button~~
