@@ -8,27 +8,14 @@
         <script src="https://kit.fontawesome.com/563efd8ee7.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-        <script type="importmap">
-            {
-              "imports": {
-                "dayjs": "https://cdn.skypack.dev/dayjs@1.10.7",
-              }
-            }
-            </script>
-            <script type="module">
-              import dayjs from 'dayjs';
-            
-              console.log(dayjs('2019-01-25').format('YYYY-MM-DDTHH:mm:ssZ[Z]'));
-            </script>
     </head>
     <body class="font-inter font-normal flex flex-col" id="index">
-        <nav class="md:flex p-4 w-full items-center bg-white md:sticky md:top-0 z-30" id="nav"></nav>
+        <nav class="md:flex p-4 w-full items-center bg-white sticky top-0 z-30" id="nav"></nav>
         <script>
         $(function(){
           $("#nav").load("./components/nav.html");
         });
         </script>
-       
         <main class="flex grow h-full flex-col bg-grey">
             <div class="flex flex-col xl:flex-row bg-beige w-full xl:h-[calc(100vh-80px)]">
                 <div class="w-full xl:w-1/2 h-full p-8 sm:p-28">
